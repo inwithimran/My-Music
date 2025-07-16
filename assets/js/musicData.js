@@ -15,25 +15,25 @@ const musicData = [
     album: "Tubelight",
     year: 2017,
     artist: "Atif Aslam, Pritam",
-    musicPath: "https://pagalnew.com/128-downloads/3525",
-  },
-  {
-    backgroundImage: "./assets/images/4.jpg",
-    posterUrl: "./assets/images/4.jpg",
-    title: "Saware",
-    album: "Phantom",
-    year: 2015,
-    artist: "Pritam, Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/4759",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/11037323/Main%20Agar%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "./assets/images/3.jpg",
     posterUrl: "./assets/images/3.jpg",
+    title: "Saware",
+    album: "Phantom",
+    year: 2015,
+    artist: "Pritam, Arijit Singh",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1300100/Saware%20-%20(Raag.Fm).mp3",
+  },
+  {
+    backgroundImage: "./assets/images/4.jpg",
+    posterUrl: "./assets/images/4.jpg",
     title: "Pehle Bhi Mein",
     album: "Animal",
     year: 2023,
     artist: "Vishal Mishra",
-    musicPath: "https://pagalnew.com/128-downloads/44540",
+    musicPath: "https://hindi2.djpunjab.app/load/w3zUx4yGdEFfgcPD-yxB4w==/Pehle%20Bhi%20Main.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Phir-Mohabbat-Murder-2-500-500.jpg",
@@ -42,7 +42,7 @@ const musicData = [
     album: "Murder 2",
     year: 2011,
     artist: "Mohammed Irfan, Saim Bhat, Arijit Singh",
-    musicPath: "https://pagalnew.com/320-download/4472",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1039687/Phir%20Mohabbat%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Humnava-Hamari-Adhuri-Kahani-Original-Motion-Picture-Soundtrack-500-500.jpg",
@@ -51,7 +51,7 @@ const musicData = [
     album: "Hamari Adhuri Kahani",
     year: 2015,
     artist: "Mithoon, Papon",
-    musicPath: "https://pagalnew.com/128-downloads/4677",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1243478/Humnava%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Banjaara-Ek-Villain-500-500.jpg",
@@ -60,7 +60,7 @@ const musicData = [
     album: "Ek Villain",
     year: 2014,
     artist: "Mohammed Irfan",
-    musicPath: "https://pagalnew.com/128-downloads/29487",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1158245/Banjaara%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "./assets/images/7.jpg",
@@ -69,16 +69,16 @@ const musicData = [
     album: "Safar",
     year: 2021,
     artist: "JalRaj",
-    musicPath: "https://pagalnew.com/128-downloads/12817",
+    musicPath: "./assets/music/tumse-mohabbat-hai.mp3",
   },
   {
-    backgroundImage: "./assets/images/8.jpg",
-    posterUrl: "./assets/images/8.jpg",
+    backgroundImage: "https://raag.fm/image/500/15256/Kaise_Hua_(Kabir_Singh)_Vishal_Mishra.jpg",
+    posterUrl: "https://raag.fm/image/500/15256/Kaise_Hua_(Kabir_Singh)_Vishal_Mishra.jpg",
     title: "Kaise Hua",
     album: "Kabir Singh",
     year: 2019,
     artist: "Vishal Mishra",
-    musicPath: "https://pagalnew.com/128-downloads/2385",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi-Singles/15256/Kaise%20Hua%20(Kabir%20Singh)%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Ishq-Mubarak-Tum-Bin-2-500-500.jpg",
@@ -87,7 +87,7 @@ const musicData = [
     album: "Tum Bin 2",
     year: 2016,
     artist: "Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/4113",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/2771774/Ishq%20Mubarak%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalfree.com/images/128Salamat%20-%20Sarbjit%20128%20Kbps.jpg",
@@ -96,7 +96,7 @@ const musicData = [
     album: "Sarbjit",
     year: 2016,
     artist: "Arijit Singh",
-    musicPath: "https://pagalfree.com/download/128-Salamat%20-%20Sarbjit%20128%20Kbps.mp3",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/2232883/Salamat%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Jo-Tum-Mere-Ho-Anuv-Jain-500-500.jpg",
@@ -105,7 +105,7 @@ const musicData = [
     album: "No album",
     year: 2024,
     artist: "Anuv Jain",
-    musicPath: "https://pagalnew.com/128-downloads/48026",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi-Singles/27381/Jo%20Tum%20Mere%20Ho%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Phir-Bhi-Tumko-Chaahunga-Half-Girlfriend-500-500.jpg",
@@ -114,7 +114,7 @@ const musicData = [
     album: "Half Girlfriend",
     year: 2017,
     artist: "Mithoon, Arijit Singh, Shashaa Tirupati",
-    musicPath: "https://pagalnew.com/128-downloads/3478",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1139549/Chahun%20Main%20Ya%20Naa%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Tum-Hi-Ho-Aashiqui-2-500-500.jpg",
@@ -123,7 +123,7 @@ const musicData = [
     album: "Aashiqui 2",
     year: 2013,
     artist: "Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/6024",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1139549/Tum%20Hi%20Ho%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Aaj-Bhi-Vishal-Mishra-500-500.jpg",
@@ -132,7 +132,7 @@ const musicData = [
     album: "Aaj Bhi",
     year: 2020,
     artist: "Vishal Mishra",
-    musicPath: "https://pagalnew.com/128-downloads/1992",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/29236/Aaj%20Bhi%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Tera-Ban-Jaunga-Kabir-Singh-500-500.jpg",
@@ -141,7 +141,7 @@ const musicData = [
     album: "Kabir Singh",
     year: 2019,
     artist: "Tulsi Kumar, Akhil Sachdeva",
-    musicPath: "https://pagalnew.com/128-downloads/2388",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/15265/Tera%20Ban%20Jaunga%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Ae-Dil-Hai-Mushkil-Title-Track-Pritam-500-500.jpg",
@@ -150,7 +150,7 @@ const musicData = [
     album: "Ae Dil Hai Mushkil",
     year: 2016,
     artist: "Pritam, Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/4097",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/2597301/Ae%20Dil%20Hai%20Mushkil%20Title%20Track%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Khamoshiyan-Jeet-Gannguli-500-500.jpg",
@@ -159,7 +159,7 @@ const musicData = [
     album: "Khamoshiyan",
     year: 2015,
     artist: "Jeet Gannguli, Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/4498",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1212987/Khamoshiyan%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Baatein-Ye-Kabhi-Na-Male-Khamoshiyan-500-500.jpg",
@@ -168,7 +168,7 @@ const musicData = [
     album: "Khamoshiyan",
     year: 2015,
     artist: "Jeet Gannguli, Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/4500",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1212987/Baatein%20Ye%20Kabhi%20Na%20(Male)%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Hai-Dil-Ye-Mera-Hate-Story-2-500-500.jpg",
@@ -177,7 +177,7 @@ const musicData = [
     album: "Hate Story 2",
     year: 2014,
     artist: "Mithoon, Arijit Singh",
-    musicPath: "https://pagalnew.com/128-downloads/5248",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1161667/Hai%20Dil%20Ye%20Mera%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "./assets/images/21.jpg",
