@@ -6,7 +6,7 @@ const musicData = [
     album: "Yaariyan",
     year: 2013,
     artist: "Mohammad Irfan",
-    musicPath: "https://pagalnew.com/128-downloads/5599",
+    musicPath: "https://raag.fm/files/mp3/128/Hindi/1147457/Baarish%20-%20Yaariyan%20-%20(Raag.Fm).mp3",
   },
   {
     backgroundImage: "./assets/images/2.jpg",
