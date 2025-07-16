@@ -48,6 +48,13 @@ const togglePlaylist = function () {
   playlistSideModal.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("modalActive");
+  // Scroll to the currently playing music item when playlist is opened
+  if (playlistSideModal.classList.contains("active")) {
+    const currentPlaylistItem = document.querySelector(`[data-playlist-item="${currentMusic}"]`);
+    if (currentPlaylistItem) {
+      currentPlaylistItem.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
 }
 
 addEventOnElements(playlistTogglers, "click", togglePlaylist);
