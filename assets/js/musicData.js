@@ -36,12 +36,12 @@ const musicData = [
     musicPath: "./assets/music/4.mp3",
   },
   {
-    backgroundImage: "./assets/images/5.jpg",
-    posterUrl: "./assets/images/5.jpg",
-    title: "name",
-    album: "name",
-    year: 2023,
-    artist: "name",
+    backgroundImage: "https://raag.fm/image/500/28781/Jhol_Maanu,_Annural_Khalid.jpg",
+    posterUrl: "https://raag.fm/image/500/28781/Jhol_Maanu,_Annural_Khalid.jpg",
+    title: "Jhol",
+    album: "Jhol",
+    year: 2024,
+    artist: "Maanu, Annural Khalid",
     musicPath: "./assets/music/5.mp3",
   },
   {
