@@ -6,7 +6,7 @@ const musicData = [
     album: "Yaariyan",
     year: 2013,
     artist: "Mohammad Irfan",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1147457/Baarish%20-%20Yaariyan%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/1.mp3",
   },
   {
     backgroundImage: "./assets/images/2.jpg",
@@ -15,7 +15,7 @@ const musicData = [
     album: "Tubelight",
     year: 2017,
     artist: "Atif Aslam, Pritam",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/11037323/Main%20Agar%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/2.mp3",
   },
   {
     backgroundImage: "./assets/images/3.jpg",
@@ -24,7 +24,7 @@ const musicData = [
     album: "Phantom",
     year: 2015,
     artist: "Pritam, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1300100/Saware%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/3.mp3",
   },
   {
     backgroundImage: "./assets/images/4.jpg",
@@ -33,7 +33,16 @@ const musicData = [
     album: "Animal",
     year: 2023,
     artist: "Vishal Mishra",
-    musicPath: "https://hindi2.djpunjab.app/load/w3zUx4yGdEFfgcPD-yxB4w==/Pehle%20Bhi%20Main.mp3",
+    musicPath: "./assets/music/4.mp3",
+  },
+  {
+    backgroundImage: "./assets/images/5.jpg",
+    posterUrl: "./assets/images/5.jpg",
+    title: "name",
+    album: "name",
+    year: 2023,
+    artist: "name",
+    musicPath: "./assets/music/5.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Phir-Mohabbat-Murder-2-500-500.jpg",
@@ -42,7 +51,7 @@ const musicData = [
     album: "Murder 2",
     year: 2011,
     artist: "Mohammed Irfan, Saim Bhat, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1039687/Phir%20Mohabbat%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/6.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Humnava-Hamari-Adhuri-Kahani-Original-Motion-Picture-Soundtrack-500-500.jpg",
@@ -51,7 +60,7 @@ const musicData = [
     album: "Hamari Adhuri Kahani",
     year: 2015,
     artist: "Mithoon, Papon",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1243478/Humnava%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/7.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Banjaara-Ek-Villain-500-500.jpg",
@@ -60,7 +69,7 @@ const musicData = [
     album: "Ek Villain",
     year: 2014,
     artist: "Mohammed Irfan",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1158245/Banjaara%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/8.mp3",
   },
   {
     backgroundImage: "./assets/images/7.jpg",
@@ -69,7 +78,7 @@ const musicData = [
     album: "Safar",
     year: 2021,
     artist: "JalRaj",
-    musicPath: "./assets/music/tumse-mohabbat-hai.mp3",
+    musicPath: "./assets/music/9.mp3",
   },
   {
     backgroundImage: "https://raag.fm/image/500/15256/Kaise_Hua_(Kabir_Singh)_Vishal_Mishra.jpg",
@@ -78,16 +87,16 @@ const musicData = [
     album: "Kabir Singh",
     year: 2019,
     artist: "Vishal Mishra",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi-Singles/15256/Kaise%20Hua%20(Kabir%20Singh)%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/10.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Ishq-Mubarak-Tum-Bin-2-500-500.jpg",
-    posterUrl: "https://pagalnew.com/coverimages/Ishq-Mubarak-Tum-Bin-2-500-500.jpg",
+    posterUrl: "https://pagalnew.com/coverimages/Ishq-Mubarak-TumPill-500-500.jpg",
     title: "Ishq Mubarak",
     album: "Tum Bin 2",
     year: 2016,
     artist: "Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/2771774/Ishq%20Mubarak%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/11.mp3",
   },
   {
     backgroundImage: "https://pagalfree.com/images/128Salamat%20-%20Sarbjit%20128%20Kbps.jpg",
@@ -96,7 +105,7 @@ const musicData = [
     album: "Sarbjit",
     year: 2016,
     artist: "Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/2232883/Salamat%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/12.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Jo-Tum-Mere-Ho-Anuv-Jain-500-500.jpg",
@@ -105,7 +114,7 @@ const musicData = [
     album: "No album",
     year: 2024,
     artist: "Anuv Jain",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi-Singles/27381/Jo%20Tum%20Mere%20Ho%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/13.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Phir-Bhi-Tumko-Chaahunga-Half-Girlfriend-500-500.jpg",
@@ -114,7 +123,7 @@ const musicData = [
     album: "Half Girlfriend",
     year: 2017,
     artist: "Mithoon, Arijit Singh, Shashaa Tirupati",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1139549/Chahun%20Main%20Ya%20Naa%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/14.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Tum-Hi-Ho-Aashiqui-2-500-500.jpg",
@@ -123,7 +132,7 @@ const musicData = [
     album: "Aashiqui 2",
     year: 2013,
     artist: "Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1139549/Tum%20Hi%20Ho%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/15.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Aaj-Bhi-Vishal-Mishra-500-500.jpg",
@@ -132,7 +141,7 @@ const musicData = [
     album: "Aaj Bhi",
     year: 2020,
     artist: "Vishal Mishra",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/29236/Aaj%20Bhi%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/16.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Tera-Ban-Jaunga-Kabir-Singh-500-500.jpg",
@@ -141,7 +150,7 @@ const musicData = [
     album: "Kabir Singh",
     year: 2019,
     artist: "Tulsi Kumar, Akhil Sachdeva",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/15265/Tera%20Ban%20Jaunga%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/17.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Ae-Dil-Hai-Mushkil-Title-Track-Pritam-500-500.jpg",
@@ -150,7 +159,7 @@ const musicData = [
     album: "Ae Dil Hai Mushkil",
     year: 2016,
     artist: "Pritam, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/2597301/Ae%20Dil%20Hai%20Mushkil%20Title%20Track%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/18.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Khamoshiyan-Jeet-Gannguli-500-500.jpg",
@@ -159,7 +168,7 @@ const musicData = [
     album: "Khamoshiyan",
     year: 2015,
     artist: "Jeet Gannguli, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1212987/Khamoshiyan%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/19.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Baatein-Ye-Kabhi-Na-Male-Khamoshiyan-500-500.jpg",
@@ -168,7 +177,7 @@ const musicData = [
     album: "Khamoshiyan",
     year: 2015,
     artist: "Jeet Gannguli, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1212987/Baatein%20Ye%20Kabhi%20Na%20(Male)%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/20.mp3",
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Hai-Dil-Ye-Mera-Hate-Story-2-500-500.jpg",
@@ -177,16 +186,16 @@ const musicData = [
     album: "Hate Story 2",
     year: 2014,
     artist: "Mithoon, Arijit Singh",
-    musicPath: "https://raag.fm/files/mp3/128/Hindi/1161667/Hai%20Dil%20Ye%20Mera%20-%20(Raag.Fm).mp3",
+    musicPath: "./assets/music/21.mp3",
   },
   {
-    backgroundImage: "./assets/images/21.jpg",
-    posterUrl: "./assets/images/21.jpg",
-    title: "name",
-    album: "name",
-    year: 2023,
-    artist: "name",
-    musicPath: "url",
+    backgroundImage: "https://pagalnew.com/coverimages/Chahun-Main-Ya-Naa-Aashiqui-2-500-500.jpg",
+    posterUrl: "https://pagalnew.com/coverimages/Chahun-Main-Ya-Naa-Aashiqui-2-500-500.jpg",
+    title: "Chahun Main Ya Naa",
+    album: "Aashiqui 2",
+    year: 2013,
+    artist: "Palak Muchhal, Arijit Singh",
+    musicPath: "./assets/music/22.mp3",
   },
   {
     backgroundImage: "./assets/images/22.jpg",
@@ -195,7 +204,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/23.mp3",
   },
   {
     backgroundImage: "./assets/images/23.jpg",
@@ -204,7 +213,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/24.mp3",
   },
   {
     backgroundImage: "./assets/images/24.jpg",
@@ -213,7 +222,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/25.mp3",
   },
   {
     backgroundImage: "./assets/images/25.jpg",
@@ -222,7 +231,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/26.mp3",
   },
   {
     backgroundImage: "./assets/images/26.jpg",
@@ -231,16 +240,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
-  },
-  {
-    backgroundImage: "./assets/images/27.jpg",
-    posterUrl: "./assets/images/27.jpg",
-    title: "name",
-    album: "name",
-    year: 2023,
-    artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/27.mp3",
   },
   {
     backgroundImage: "./assets/images/28.jpg",
@@ -249,7 +249,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/28.mp3",
   },
   {
     backgroundImage: "./assets/images/29.jpg",
@@ -258,7 +258,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/29.mp3",
   },
   {
     backgroundImage: "./assets/images/30.jpg",
@@ -267,7 +267,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/30.mp3",
   },
   {
     backgroundImage: "./assets/images/31.jpg",
@@ -276,7 +276,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/31.mp3",
   },
   {
     backgroundImage: "./assets/images/32.jpg",
@@ -285,7 +285,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/32.mp3",
   },
   {
     backgroundImage: "./assets/images/33.jpg",
@@ -294,7 +294,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/33.mp3",
   },
   {
     backgroundImage: "./assets/images/34.jpg",
@@ -303,7 +303,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/34.mp3",
   },
   {
     backgroundImage: "./assets/images/35.jpg",
@@ -312,7 +312,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/35.mp3",
   },
   {
     backgroundImage: "./assets/images/36.jpg",
@@ -321,7 +321,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/36.mp3",
   },
   {
     backgroundImage: "./assets/images/37.jpg",
@@ -330,7 +330,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/37.mp3",
   },
   {
     backgroundImage: "./assets/images/38.jpg",
@@ -339,7 +339,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/38.mp3",
   },
   {
     backgroundImage: "./assets/images/39.jpg",
@@ -348,7 +348,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/39.mp3",
   },
   {
     backgroundImage: "./assets/images/40.jpg",
@@ -357,7 +357,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/40.mp3",
   },
   {
     backgroundImage: "./assets/images/41.jpg",
@@ -366,7 +366,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/41.mp3",
   },
   {
     backgroundImage: "./assets/images/42.jpg",
@@ -375,7 +375,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/42.mp3",
   },
   {
     backgroundImage: "./assets/images/43.jpg",
@@ -384,7 +384,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/43.mp3",
   },
   {
     backgroundImage: "./assets/images/44.jpg",
@@ -393,7 +393,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/44.mp3",
   },
   {
     backgroundImage: "./assets/images/45.jpg",
@@ -402,7 +402,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/45.mp3",
   },
   {
     backgroundImage: "./assets/images/46.jpg",
@@ -411,7 +411,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/46.mp3",
   },
   {
     backgroundImage: "./assets/images/47.jpg",
@@ -420,7 +420,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/47.mp3",
   },
   {
     backgroundImage: "./assets/images/48.jpg",
@@ -429,7 +429,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/48.mp3",
   },
   {
     backgroundImage: "./assets/images/49.jpg",
@@ -438,7 +438,7 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/49.mp3",
   },
   {
     backgroundImage: "./assets/images/50.jpg",
@@ -447,6 +447,6 @@ const musicData = [
     album: "name",
     year: 2023,
     artist: "name",
-    musicPath: "url",
+    musicPath: "./assets/music/50.mp3",
   },
 ];
