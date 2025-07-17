@@ -5,7 +5,7 @@ const musicData = [
     title: "Baarish",
     album: "Yaariyan",
     year: 2013,
-    artist: "Mohammad Irfan",
+    artist: "Mohammed Irfan",
     musicPath: "./assets/music/1.mp3",
   },
   {
