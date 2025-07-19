@@ -28,6 +28,9 @@ for (let i = 0, len = musicData.length; i < len; i++) {
       <div class="item-icon">
         <span class="material-symbols-rounded">equalizer</span>
       </div>
+      <div class="loading-indicator" style="display: none;">
+        <span class="material-symbols-rounded">hourglass_empty</span>
+      </div>
     </div>
   </li>
   `;
@@ -158,7 +161,16 @@ const changePlayerInfo = function (autoPlay) {
   const songIndexDisplay = document.querySelector("[data-song-index]");
   songIndexDisplay.textContent = `${currentMusic + 1}/${musicData.length}`;
 
+  // Show loading indicator for the current song only if loading takes time
+  const musicItem = document.querySelector(`[data-playlist-item="${currentMusic}"]`);
+  const loadingIndicator = musicItem.querySelector(".loading-indicator");
+  const loadingTimeout = setTimeout(() => {
+    loadingIndicator.style.display = "grid";
+  }, 200); // Show after 200ms to avoid flashing for fast loads
+
   audioSource.addEventListener("loadeddata", () => {
+    clearTimeout(loadingTimeout); // Cancel the timeout if loaded quickly
+    loadingIndicator.style.display = "none"; // Hide loading indicator when song is loaded
     updateDuration();
     // Play if autoPlay is true
     if (autoPlay) {
