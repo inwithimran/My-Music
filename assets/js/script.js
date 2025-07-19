@@ -75,8 +75,9 @@ const loadSavedState = function () {
   const hash = window.location.hash.substring(1); // Get hash without '#'
   const savedMusicIndex = localStorage.getItem("currentMusic");
   const savedTime = localStorage.getItem("currentTime");
+  const playBtn = document.querySelector("[data-play-btn]");
 
-  // Normalize hash for comparison (lowercase, replace spaces with hyphens)
+  // Normalize hash for comparison (lowercase, replace hyphens with spaces)
   const normalizedHash = hash.toLowerCase().replace(/-/g, ' ');
 
   // Find song matching the hash
@@ -89,12 +90,14 @@ const loadSavedState = function () {
     currentMusic = hashIndex;
     lastPlayedMusic = currentMusic;
     changePlaylistItem();
+    playBtn.classList.remove("active"); // Reset play button state
     changePlayerInfo(true); // Auto-play if navigated via hash
   } else if (savedMusicIndex !== null) {
     // Fallback to saved state if no valid hash
     currentMusic = Number(savedMusicIndex);
     lastPlayedMusic = currentMusic;
     changePlaylistItem();
+    playBtn.classList.remove("active"); // Reset play button state
     changePlayerInfo(false); // Do not play on load
     audioSource.addEventListener("loadeddata", () => {
       if (savedTime !== null) {
@@ -103,15 +106,15 @@ const loadSavedState = function () {
         playerRunningTime.textContent = getTimecode(audioSource.currentTime);
         updateRangeFill();
       }
-      playBtn.classList.remove("active");
+      playBtn.classList.remove("active"); // Ensure play button shows "play" icon
       const songIndexDisplay = document.querySelector("[data-song-index]");
       songIndexDisplay.textContent = `${currentMusic + 1}/${musicData.length}`;
     }, { once: true });
   } else {
     // Default to first song if no hash or saved state
     changePlaylistItem();
+    playBtn.classList.remove("active"); // Reset play button state
     changePlayerInfo(false);
-    playBtn.classList.remove("active");
     const songIndexDisplay = document.querySelector("[data-song-index]");
     songIndexDisplay.textContent = `${currentMusic + 1}/${musicData.length}`;
   }
@@ -177,9 +180,10 @@ const changePlayerInfo = function (autoPlay) {
     loadingIndicator.style.display = "none"; // Hide loading indicator when song is loaded
     updateDuration();
     if (autoPlay) {
-      playMusic();
+      playMusic(); // Explicitly call playMusic to ensure playback and button state sync
     } else {
-      playBtn.classList.remove("active");
+      audioSource.pause(); // Ensure audio is paused
+      playBtn.classList.remove("active"); // Show play icon
     }
   }, { once: true });
 }
@@ -187,6 +191,7 @@ const changePlayerInfo = function (autoPlay) {
 addEventOnElements(playlistItems, "click", function () {
   lastPlayedMusic = currentMusic;
   currentMusic = Number(this.dataset.playlistItem);
+  playBtn.classList.remove("active"); // Reset play button state
   changePlayerInfo(true); // Always play when clicking playlist item
   changePlaylistItem();
 });
@@ -221,7 +226,10 @@ let playInterval;
 
 const playMusic = function () {
   if (audioSource.paused) {
-    audioSource.play();
+    audioSource.play().catch(error => {
+      console.error("Autoplay failed:", error);
+      playBtn.classList.remove("active"); // Revert to play icon if autoplay fails
+    });
     playBtn.classList.add("active");
     playInterval = setInterval(updateRunningTime, 500);
   } else {
@@ -292,6 +300,7 @@ const isMusicEnd = function () {
       } else {
         currentMusic >= musicData.length - 1 ? currentMusic = 0 : currentMusic++;
       }
+      playBtn.classList.remove("active"); // Reset play button state
       changePlayerInfo(true); // Auto-play next song when current one ends
       changePlaylistItem();
     }
@@ -310,6 +319,7 @@ const skipNext = function () {
   } else {
     currentMusic >= musicData.length - 1 ? currentMusic = 0 : currentMusic++;
   }
+  playBtn.classList.remove("active"); // Reset play button state
   changePlayerInfo(true); // Auto-play when skipping to next
   changePlaylistItem();
 }
@@ -328,6 +338,7 @@ const skipPrev = function () {
   } else {
     currentMusic <= 0 ? currentMusic = musicData.length - 1 : currentMusic--;
   }
+  playBtn.classList.remove("active"); // Reset play button state
   changePlayerInfo(true); // Auto-play when skipping to previous
   changePlaylistItem();
 }
