@@ -91,7 +91,7 @@ const musicData = [
   },
   {
     backgroundImage: "https://pagalnew.com/coverimages/Ishq-Mubarak-Tum-Bin-2-500-500.jpg",
-    posterUrl: "https://pagalnew.com/coverimages/Ishq-Mubarak-TumPill-500-500.jpg",
+    posterUrl: "https://pagalnew.com/coverimages/Ishq-Mubarak-Tum-Bin-2-500-500.jpg",
     title: "Ishq Mubarak",
     album: "Tum Bin 2",
     year: 2016,
