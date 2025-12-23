@@ -354,6 +354,7 @@ body.modalActive { overflow: hidden; }
 .player-control {
   justify-content: space-evenly;
   margin-bottom: 24px;
+  align-items: center; /* Ensures smaller skip buttons are centered next to big play button */
 }
 
 .player-control .toggle.active { color: var(--primary); }
@@ -361,6 +362,13 @@ body.modalActive { overflow: hidden; }
 .player-control .play {
   background-color: var(--surface-variant);
   color: var(--primary);
+  width: 60px; /* Increased size for mobile */
+  height: 60px; /* Increased size for mobile */
+  box-shadow: var(--shadow-2);
+}
+
+.player-control .play .material-symbols-rounded {
+  font-size: 4rem; /* Scaled icon for mobile */
 }
 
 .player-control .play.active {
@@ -614,8 +622,17 @@ body.modalActive { overflow: hidden; }
   .player-control {
     margin-inline-end: 174px;
     min-width: max-content;
-    gap: 8px;
+    gap: 16px; /* Increased gap to accommodate larger play button */
     margin-bottom: 24px;
+  }
+
+  .player-control .play {
+    width: 84px; /* Even larger size for desktop */
+    height: 84px; /* Even larger size for desktop */
+  }
+
+  .player-control .play .material-symbols-rounded {
+    font-size: 4.2rem; /* Scaled icon for desktop */
   }
 
   /**
